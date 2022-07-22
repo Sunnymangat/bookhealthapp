@@ -1,0 +1,175 @@
+.searchbar{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  margin-bottom: 2px;
+}
+.search-bar-type{
+  grid-column: 4/7;
+  text-align: center;
+  font-size:medium;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+}
+.searchbarinput{
+  grid-column: 1/4;
+  border: none;
+  margin-top: -2px;
+  margin-right: 1px;
+  font-size: medium;
+  text-align: center;
+  background: transparent;
+  outline: transparent;
+  border-bottom: 1px solid transparent; 
+}
+.searchbarinput:hover{
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+.searchbarinput:focus, .searchbarinput:active{
+  outline: none;
+  border-bottom: 1px solid teal; 
+  background: white;
+}
+.searchbarinputIcon{
+  grid-column: 5/-1;
+  cursor: pointer;
+  margin-top: -2%;
+}
+.Icons-left{
+  grid-column: 1/4;
+}
+.Iconsstyle1{
+  margin-top: 5px;
+  padding-left: 5%;
+  padding-right: 4%;
+}
+
+.Iconsstyle2Outer{
+  margin-top: 5px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.Icons-right{
+  grid-column: 8/-1; 
+}
+.Iconsstyle1-small:hover{
+  cursor: pointer;
+  color:  #0066FF;
+}
+.searchbtnIconsStyle{
+  border: none;
+  margin-top: -2px;
+  border-bottom: 1px solid transparent; 
+  background: transparent;
+}
+.searchbtnIconsStyle:hover,.searchbtnIconsStyle:focus{
+  cursor: pointer;
+  background: white;
+  color:teal;
+  border-bottom: 1px solid teal;  
+}
+.btnIconsstyle1{
+  border:none;
+  margin-top: -2px;
+  padding-left: 4%;
+  padding-right: 4%;
+  background: transparent;
+  border-bottom: 3px solid transparent;
+}
+.btnIconsstyle2{
+  border:none;
+  margin-top: -2px;
+  background: transparent;
+  border-bottom: 3px solid transparent;
+}
+
+.smallbtnIconsstyle1{
+  margin-top: -2px;
+  padding-left: 10px;
+  padding-right:10px;
+  border: none;
+  background: transparent;
+  border-bottom: 3px solid transparent;
+}
+.btnIconsstyle2:hover,.btnIconsstyle2:focus {
+  cursor: pointer;
+  background: white;
+  border-bottom: 3px solid #29ABE1;
+}
+.btnIconsstyle1:hover ,.btnIconsstyle1:focus{
+  cursor: pointer;
+  background: white;
+  border-bottom: 3px solid #0066FF;
+}
+.btnIconsstyle2:hover .Iconsstyle2Outer,.btnIconsstyle2:focus .Iconsstyle2Outer,.btnIconsstyle2:active .Iconsstyle2Outer{
+  color: #29ABE1;
+}
+.btnIconsstyle1:hover .Iconsstyle1,.btnIconsstyle1:hover .Iconsstyle1-small,.btnIconsstyle1:hover .searchbarinputIcon{
+  color:  #0066FF;
+}
+.smallbtnIconsstyle1:hover,.smallbtnIconsstyle1:focus{
+  cursor: pointer;
+  background: white;
+  border-bottom: 3px solid #0066FF;
+}
+.small-srn-nav,.smallIcons-left,.exploreButton{
+  display: none;
+}
+
+
+@media (max-width:720px) {
+  .Icons-left,.search-bar-type, .searchbarinput,.searchbarinputIcon,.Iconsstyle1 {
+    display: none;
+  }
+  .exploreButton{
+    display:block;
+    grid-column: 4/6;
+    background: transparent;
+    font-size:large;
+    border: none;
+    margin-top: -1%;
+    border-bottom: 1px solid transparent;
+  }
+  .exploreButton:hover{
+    cursor: pointer;
+    background: white;
+    border-bottom: 1px solid teal;
+  }
+  .exploreButton:focus,.exploreButton:active{
+    text-decoration: underline;
+    text-decoration-color: teal;
+    text-decoration-thickness: 2px;
+    background: white;
+    -moz-text-decoration: underline;
+    -moz-text-decoration-color: teal;
+    -moz-text-decoration-thickness: 2px;
+    border-bottom: 1px solid teal;
+  }
+  
+  .smallIcons-left{
+    margin-top: 1px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .smallIconsstyle1{
+    grid-column: 1/2;
+    margin-top: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .small-srn-nav{
+    grid-column: 1/2;
+    margin-left: 3px;
+    display: block;
+  }
+}
+@media (max-width:475px){
+  .exploreButton{
+    font-size:medium;
+  }
+}
+@media (max-width:445px){
+  .exploreButton{
+    grid-column: 3/7;
+  }
+}

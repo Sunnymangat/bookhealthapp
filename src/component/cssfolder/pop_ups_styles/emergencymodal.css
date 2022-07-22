@@ -1,0 +1,12 @@
+.emergencyContainer button{
+  margin-top: 1%;
+  margin-left:0.5%;
+  margin-right:0.5%;
+  cursor: pointer;
+}
+
+.emergencyContainer button:hover{
+  background-color: azure;
+  border-radius: 10px;
+  cursor: pointer;
+}

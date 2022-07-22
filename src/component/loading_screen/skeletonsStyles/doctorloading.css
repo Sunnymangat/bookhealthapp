@@ -1,0 +1,153 @@
+.doctorCard{
+  display: grid;
+  border: 1px solid white;
+  background: rgba(255, 255, 255,0.9);
+  margin: 1%;
+  margin-top: 0.5%;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 2fr 4fr 1fr;
+}
+.doctorCard:hover,.doctorCard:focus{
+  background: #fff5ff
+}
+.doctorCard img{
+  width:100%;
+  height:auto;
+  border-radius: 50%;
+}
+.doctorImage{
+  grid-column: 1/2;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.About{
+  grid-column: 2/3;
+  padding: 2%;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.description{
+  grid-column: 3/4;
+  padding: 2%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+.doctorBtn{
+  grid-column: 4/-1;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+.doctorBtn button{
+  margin-top: 35%;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background-color:white;
+}
+.doctorBtn button:hover{
+  color:white;
+  background-color: teal;
+}
+.doctorImageSkl2,.doctorBtnSmall1,.doctorBtnSmall2{
+  display: none;
+}
+@media (max-width:850px) {
+  .doctorImageSkl1,.doctorBtn button{
+    display:none;
+  }
+  .doctorCard{
+    grid-template-rows: 1fr 0.4fr;
+    grid-template-columns: 1fr 0.7fr;
+    padding-bottom: 1%;
+  }
+  .doctorImageSkl2,.doctorImage{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+  }
+  .About{
+    grid-row: 1/2;
+    grid-column: 2/-1;
+    justify-content: unset;
+    align-content:center;
+    text-align: center;
+    padding: 2%;
+  }
+  .description{
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    padding: 2%;
+  }
+  .doctorBtnSmall1{
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-content: center;
+    margin:0% 30%;  
+  }
+  .doctorBtnSmall2{
+    grid-column: 2/-1;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-content: center;
+    margin:0% 30%;
+  }
+  .doctorBtnSmall1 button,.doctorBtnSmall2 button{
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background-color:white;
+  }
+  .doctorBtnSmall1 button:hover,.doctorBtnSmall2 button:hover{
+    color:white;
+    background-color: teal;
+  }
+}
+@media (max-width:420px) {
+  .doctorCard{
+    text-align: center;
+    grid-template-rows: 0.5fr 0.3fr 0.1fr 0.1fr;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 1%;
+  }
+  .doctorImageSkl2,.doctorImage{
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    display: grid;
+    align-content: center;
+    justify-content:center;
+    align-items: center;
+    margin: 0 5%;
+    margin-bottom: 1%;
+  }
+  .doctorBtnSmall1{
+    grid-row: 3/4;
+  }
+  .doctorBtnSmall2{
+    grid-row: 3/4;
+  }
+  .About{
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    align-content:unset;
+    justify-content: unset;
+    align-self: flex-start;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  .description{
+    grid-row: 4/-1;
+    grid-column: 1/-1;
+    text-align: start;
+    padding: 2%;
+  }
+}

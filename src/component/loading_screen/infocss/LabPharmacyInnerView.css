@@ -1,0 +1,88 @@
+.LabPhInnerView{
+  display: grid;
+  grid-template-rows: 0.5fr 0.1fr 0.2fr;
+  grid-template-columns: 0.5fr 0.3fr 0.5fr;
+}
+.LabPhImageInnerView{
+  grid-row: 1/2;
+  grid-column: 1/2;
+  text-align: center;
+}
+.LabPhPersonalInfo{
+  grid-row: 1/2;
+  grid-column: 2/3;
+  text-align: center;
+  font-weight: bold;
+  display: grid;
+  align-content: center;
+}
+.LabPhOwnerImageInnerView{
+  grid-row: 1/2;
+  grid-column: 3/-1;
+  text-align: center;
+}
+.LabPhImageInnerView img{
+  width:95%;
+}
+.LabPhOwnerImageInnerView img{
+  width: 70%;
+  border-radius:50% ;
+}
+.LabPhInnerSpeciality{
+  grid-row: 2/3;
+  grid-column: 1/-1;
+  padding: 1%;
+}
+.LabPhBtnSection1{
+  grid-row: 3/-1;
+  grid-column: 2/3;
+  text-align: center;
+}
+.LabPhbtn{
+  background: #ccffce;
+  font-size: larger;
+  color: teal;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px;
+  transition-property: all;
+  transition-duration: 5ms;
+  transition-delay: 5ms;
+  cursor: pointer;
+}
+.LPAppointmentForms{
+  grid-row: 3/-1;
+  grid-column: 1/-1;
+  text-align: center;
+  color: teal;
+}
+@media (max-width:565px) {
+  .LabPhInnerView{
+    grid-template-rows: repeat(5,0.3fr);
+    grid-template-columns: 1fr;
+  }
+  .LabPhImageInnerView{
+    grid-row: 1/2;
+    grid-column: 1/-1;
+  }
+  .LabPhPersonalInfo{
+    grid-row: 2/3;
+    grid-column: 1/-1;
+  }
+  .LabPhOwnerImageInnerView{
+    grid-row: 3/4;
+    grid-column: 1/-1;
+  }
+  .LabPhInnerSpeciality{
+    grid-row: 4/5;
+    grid-column: 1/-1;
+  }
+  .LPAppointmentForms{
+    grid-row: 4/5;
+    grid-column: 1/-1;
+  }
+  .LabPhBtnSection1{
+    grid-row: 5/-1;
+    grid-column: 1/-1;
+  }
+}

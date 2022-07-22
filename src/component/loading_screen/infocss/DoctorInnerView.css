@@ -1,0 +1,166 @@
+.DoctorInnerView{
+  display:grid;
+  grid-template-rows: 0.2fr 0.1fr 0.1fr;
+  grid-template-columns: 0.5fr 0.2fr 0.2fr 0.2fr;
+  padding-bottom: 2%;
+}
+.DoctorImageInnerView{
+  grid-row: 1/2;
+  grid-column: 1/2;
+  text-align: center;
+}
+.DoctorImageInnerView img{
+  width:60%;
+  border-radius:50%;
+}
+.DoctorPersonalInfo{
+  grid-row: 1/2;
+  grid-column: 2/3;
+  font-weight: bold;
+}
+.DoctorClinicInfo{
+  grid-row: 1/2;
+  grid-column: 3/4;
+  font-weight: bold;
+}
+.DoctorHouseInfo{
+  grid-row: 1/2;
+  grid-column: 4/5;
+  font-weight: bold;
+}
+.DoctorLowerSection{
+  grid-row: 2/3;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2,1fr);
+}
+.DoctorSpeciality{
+  grid-row: 1/2;
+  grid-column: 1/2;
+  padding: 2%;
+}
+.DoctorHistory{
+  grid-row: 1/2;
+  grid-column: 2/3;
+  padding: 2%;
+}
+.DoctorBtnSection1{
+  grid-row: 3/-1;
+  grid-column: 2/4;
+}
+.Doctorbtn{
+  background: #ccffce;
+  font-size: larger;
+  color: teal;
+  padding: 10px;
+  margin-top: 2%;
+  border-radius: 10px;
+  border: 2px;
+  transition-property: all;
+  transition-duration: 5ms;
+  transition-delay: 5ms;
+  cursor: pointer;
+}
+.DoctorAppointmentForms{
+  grid-row: 3/-1;
+  grid-column: 1/-1;
+  text-align: center;
+  color: teal;
+}
+@media (max-width:720px) {
+  .DoctorInnerView{
+    grid-template-rows: 0.3fr 0.1fr 0.1fr 0.1fr;
+    grid-template-columns: repeat(3,1fr);
+  }  
+  .DoctorImageInnerView{
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    text-align: center;
+  }
+  .DoctorPersonalInfo{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    text-align: center;
+  }
+  .DoctorClinicInfo{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    text-align: center;
+  }
+  .DoctorHouseInfo{
+    grid-row: 2/3;
+    grid-column: 3/-1;
+    text-align: center;
+  }
+  .DoctorLowerSection{
+    grid-row: 3/4;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .DoctorSpeciality{
+    grid-column: 1/2;
+  }
+  .DoctorHistory{
+    grid-column: 2/3;
+  }
+  .DoctorAppointmentForms{
+    grid-row: 4/5;
+  }
+  .DoctorBtnSection1{
+    grid-row: 5/-1;
+    grid-column: 1/-1;
+    text-align: center;
+  }
+}
+@media (max-width:520px){
+  .DoctorInnerView{
+    grid-template-rows: 0.5fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-template-columns: 1fr;
+  }
+  .DoctorImageInnerView img{
+    width:85%;
+  }
+  .DoctorPersonalInfo{
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    text-align: center;
+  }
+  .DoctorClinicInfo{
+    grid-row: 3/4;
+    grid-column: 1/-1;
+    text-align: center;
+  }
+  .DoctorHouseInfo{
+    grid-row: 4/5;
+    grid-column: 1/-1;
+    text-align: center;
+  }
+  .DoctorLowerSection{
+    grid-row: 5/6;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+  }
+  .DoctorAppointmentForms{
+    grid-row: 5/6;
+  }
+  .DoctorSpeciality{
+    grid-row: 1/2;
+    grid-column: 1/-1;
+  }
+  .DoctorHistory{
+    grid-row: 2/3;
+    grid-column: 1/-1;
+  }
+  .DoctorAppointmentForm{
+    grid-row: 5/6;
+  }
+  .DoctorBtnSection1{
+    grid-row: 6/7;
+    grid-column: 1/-1;
+  }
+}

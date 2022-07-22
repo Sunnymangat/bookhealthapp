@@ -1,0 +1,129 @@
+.PharmacyCard{
+  display: grid;
+  border: 1px solid white;
+  background: rgba(255, 255, 255,0.9);
+  margin: 1%;
+  margin-top: 0.5%;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 2fr 4fr 1fr;
+}
+.PharmacyCard:hover{
+  background-color:#fffdf0;
+}
+
+.PharmacyCard img{
+  width:100%;
+}
+
+.PImage{
+  grid-column: 1/2;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.POwnerImage{
+  grid-column: 2/3;
+  padding: 1%;
+  display: grid;
+  margin:0 5%;
+  font-weight: bold;
+  align-content: center;
+  justify-content: center;
+}
+
+.POwnerImage img{
+  border-radius: 50%;
+}
+
+.Pdescription{
+  grid-column: 3/4;
+  padding: 1%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+.PSmallScreen{
+  display: none;
+}
+
+@media (max-width:850px) {
+  .PharmacyCard{
+    grid-template-rows: 1fr 0.3fr 0.1fr;
+    grid-template-columns: 1fr 0.7fr;
+    padding-bottom: 1%;
+  }
+  .POwnerImage{
+    grid-row: 1/2;
+    grid-column: 2/-1;
+    padding: 1%;
+    display: grid;
+    margin:0 2%;
+    align-content: center;
+    justify-content: center;
+  }
+  .Pdescription{
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    padding: 2%;
+  } 
+  .PSmallScreen{
+    grid-row: 3/4;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .PSmallScreen button{
+    background-color: white;
+    border: none;
+    border-radius:50% ;
+    cursor: pointer;
+  }
+  .PSmallScreen button:hover{
+    background-color: teal;
+    color:white;
+  }
+  .PBtnSmall1{
+    grid-column: 1/2;
+    text-align: center;
+  }
+  .PBtnSmall2{
+    grid-column: 2/-1;
+    text-align: center;
+  } 
+}
+@media (max-width:420px) {
+  .PharmacyCard{
+    grid-template-rows: 1fr 0.4fr 0.1fr 0.1fr;
+    grid-template-columns: 1fr 0.9fr;
+    padding-bottom: 1%;
+  }
+  .PImage{
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    margin: 0 15%;
+    margin-bottom: 1%;
+  }
+  .POwnerImage{
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    padding: 0 25%;
+  } 
+  .PSmallScreen{
+    grid-row: 3/4;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .PBtnSmall1{
+    grid-column: 1/2;
+    text-align: center;
+  }
+  .PBtnSmall2{
+    grid-column: 2/-1;
+    text-align: center;
+  }
+  .Pdescription{
+    grid-row: 4/-1;
+  } 
+}

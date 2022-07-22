@@ -1,0 +1,29 @@
+.doctor-card{
+  width:100%;
+  height:200px;
+  background: whitesmoke;
+  font-size: 110%;
+  font-weight: bold;
+  font-style: italic;
+  margin: 15px 15px;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  border-radius: 5%;
+  border:1px dashed teal;
+  cursor: pointer;
+}
+.doctor-card button{
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 110%;
+  font-weight: bold;
+  font-style: italic;
+}
+.doctor-card button:hover{
+  background-color: white;
+  border-radius:10%;
+}

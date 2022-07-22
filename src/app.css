@@ -1,0 +1,160 @@
+::-webkit-scrollbar{
+  width:0px;
+}
+h2{
+  text-align:"center";
+  text-decoration:underline;
+  font-family: 'Metal', cursive;
+  font-weight:bold;
+  font-size: 215%;
+  color:teal;
+  margin: -12px 0%;
+}
+.search_location{
+  width:75%;
+  border:none;
+  border-bottom:1px solid transparent;
+  border-radius: 5px;
+  outline: none;
+  background-color: white;
+  text-align: center;
+  font-size: medium;
+  padding: 0.5%;
+}
+.search_location:hover,.search_location:focus{
+  border-bottom:1px solid teal;
+  background-color: #f4f0ec;
+}
+.search_location:focus{
+  background-color: white;
+}
+.search_location_btn{
+  border:none;
+  border-bottom:1px solid transparent;
+  outline: none;
+  background-color: transparent;
+  text-align: center;
+  font-size: medium;
+  padding: 0.5%;
+  margin-left: 0.2%;
+  cursor: pointer;
+}
+
+.search_location_btn:hover{
+  border-bottom:1px solid teal;
+  color: teal;
+}
+.search_location_btn:focus{
+  border-bottom:1px solid teal;
+  background-color: white;
+  color: teal;
+}
+.errorMessage{
+  font-size: larger;
+  font-weight: bold;
+  font-style: italic;
+  color: #56a2a8;
+}
+.SwappingArea {
+  margin-top:0%;
+}
+.bookhealth-navbar{
+  position:sticky;
+  top: 0px;
+  z-index: 5;
+  margin: 0%;
+  padding: 0.2%;
+  margin-top: 0.2%;
+  margin-bottom: 0.5%;
+  border-radius: 5px;
+  animation: bchange 20s linear 1s infinite reverse;
+}
+.rest-background{
+  animation: bchangeback 15s linear 1s infinite reverse;
+  animation-play-state: paused;
+  margin-top: 0%;
+}
+@keyframes bchange {
+  0%{background: #fffee3}
+  15%{background: #edfeff}
+  35%{background: #fff2ff}
+  50%{background: #d9fffd}
+  65%{background: #fff2ff}
+  85%{background: #edfeff}
+  100%{background: #fffee3}
+}
+
+.rest-background:hover{
+  animation-play-state: running;
+}
+@keyframes bchangeback {
+  0%{background: linear-gradient(to right,#ffffff,#fff2fd,#FFFFFF);}
+  100%{background: linear-gradient(to right,#ffffff,#e3fffe,#FFFFFF);}
+}
+
+
+.splash-title{
+  text-align: center;
+  font-family: 'Metal', cursive;
+  font-weight:bold;
+  font-size: 250%;
+  padding-bottom: 50px;
+  color: teal;
+}
+.login .splash-title:hover{
+  color: #63bbc2;
+}
+.carouseltext{
+  text-align: center;
+  font-family: 'Metal', cursive;
+  font-weight:bold;
+  font-size: 250%;
+  padding-bottom: 50px;
+  color: teal;
+}
+
+@media (max-width: 550px) {
+  .splash-title{
+    color: #63bbc2;
+  }
+  
+  .loginbtn{
+    background-color: #56a2a8;
+  }
+  .loginbtn:hover{
+    background-color: #63bbc2 ;
+  }
+}
+@media (max-width:380px) {
+  .carouseltext{
+    line-height:75px;
+    font-size: 130%;
+  }
+}
+.leaflet-emergencycontainer{
+  height: 30vh;
+  z-index: 1;
+  border-radius: 10px;
+}
+.leaflet-container {
+  height: 50vh;
+  margin: 2%;
+  z-index: 1;
+  border-radius: 10px;
+}   
+.locateme_btn{
+  border:none;
+  text-align: center;
+  cursor:pointer;
+  color: white;
+  font-size: large;
+  padding: 0.5%;
+  margin-top: -1%;
+  margin-bottom: 1%;
+  border-radius: 5px;
+  background: #56a2a8;
+}
+.locateme_btn:hover,.locateme_btn:focus-visible{
+  color:whitesmoke;
+  background: #63bbc2;
+}

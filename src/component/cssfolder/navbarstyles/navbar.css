@@ -1,0 +1,54 @@
+.plusIcon{
+  animation: plusicon 4s linear 1ms 2 reverse;
+}
+@keyframes plusicon{
+  0%{background-color: #81f78e;}
+  50%{background-color: #fcf786;}
+  100%{background-color: aquamarine;}
+}
+.navbar{
+  display: grid;
+  grid-template-columns: repeat(16,1fr);
+  padding: 0px;
+  margin: 0px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  animation: navback 20s linear 1ms infinite reverse;
+}
+.navbar button{
+  background:transparent;
+  border:none;
+  margin: 0%;
+  padding: 0%;
+}
+.navimage1 {
+  grid-column: 1/2;
+}
+.navheading{
+  font-family: 'Metal', cursive;
+  font-weight:bold;
+  font-size: 250%;
+  padding-left: 3.5%;
+  cursor:none;
+  grid-column:2/16;
+  text-align: center;
+  color: teal;
+}
+.navimage2{
+  grid-column: 17/-1;
+}
+
+@keyframes navback {
+  0%{background: #95eaf0;}
+  10%{background: #fcf786;}
+  20%{background: #afff8c;}
+  30%{background: #ffe0f5;}
+  40%{background: #81f78e;}
+  50%{background: #ffffc9;}
+  60%{background: #81f78e;}
+  70%{background: #ffe0f5;}
+  80%{background: #afff8c;}
+  90%{background: #fcf786;}
+  100%{background: #95eaf0;}
+}

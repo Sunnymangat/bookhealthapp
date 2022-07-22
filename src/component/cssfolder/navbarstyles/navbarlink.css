@@ -1,0 +1,116 @@
+.navlink{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fit,minmax(119px,1fr));
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  padding-bottom: 5px;
+}
+.navbtn{
+  background: #ccffce;
+  font-size:large;
+  margin:2px;
+  padding: 2px;
+  border-radius: 30px;
+  border: none;
+  transition-property: all;
+  transition-duration: 5ms;
+  transition-delay: 5ms;
+}
+.navlink button:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  background:#fcfcfc;
+  color: teal;
+  font-weight: bold;
+  padding: 0;
+}
+
+.navlink button:focus, .navlink button:active{
+  cursor: pointer;
+  background: white;
+  color: teal;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  font-weight: bold;
+  padding: 0;
+}
+
+
+.navbtnSmall{
+  background: #ccffce;
+  border-radius: 30px;
+  border: 0;
+  font-size:medium;
+  margin:3px;
+  padding: 3px;
+  transition-property: all;
+  transition-duration: 5ms;
+  transition-delay: 5ms;
+}
+.navbtnSmall:hover,.navbtnSmall:focus, .navbtnSmall:active{
+  cursor: pointer;
+  background: white;
+  color: teal;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  font-weight: bold;
+  padding: 0;
+}
+.smallscrnbtn,.smallscrnSearch{
+  display: none;
+}
+
+@media (max-width:720px) {
+  .navbtn{
+    display: none;
+  }
+  .smallscrnbtn{
+    display: block;
+  }
+  .smallscrnbtn1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  .smallscrnbtn2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  .smallscrnSearch{
+    display: flex;
+   justify-content: center;
+   margin: 4px;
+
+  }
+  .navSmallScreenSearchBar{
+    border: none;
+    margin-right: 1px;
+    font-size: medium;
+    text-align: center;
+    background: white;
+    outline: transparent;
+    border-radius: 5px;
+    border-bottom: 1px solid transparent;
+  }
+  .navSmallScreenSearchBar:hover{
+    background-color: whitesmoke;
+    border-radius: 5px;
+  }
+  .navSmallScreenSearchBar:focus, .navSmallScreenSearchBar:active{
+    outline: none;
+    border-bottom: 1px solid teal; 
+    background: white;
+  }
+  .navSmallScreenSearchIcon{
+    cursor: pointer;
+  }
+}
+
+@media (max-width:350px) {
+  .smallscrnbtn1 .navbtnSmall,.smallscrnbtn2 .navbtnSmall{
+    font-size: smaller;
+    margin-top:1px;
+  }
+}

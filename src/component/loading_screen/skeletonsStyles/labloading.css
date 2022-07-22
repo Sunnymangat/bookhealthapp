@@ -1,0 +1,145 @@
+.LaboratoryCard{
+  display: grid;
+  border: 1px solid white;
+  background: rgba(255, 255, 255,0.9);
+  margin: 1%;
+  margin-top: 0.5%;
+  grid-template-columns: 2fr 2fr 4fr 1fr;
+}
+.LaboratoryCard:hover,.LaboratoryCard:focus{
+  background: #f4fff0;
+}
+
+.LaboratoryCard img{
+  width:100%;
+  height:auto;
+}
+
+.LabImage{
+  grid-column: 1/2;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+.LabOwnerImage{
+  grid-column: 2/3;
+  padding: 1%;
+  display: grid;
+  margin:0 5%;
+  align-content: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.LabOwnerImage img{
+  border-radius: 50%;
+}
+
+.Labdescription{
+  grid-column: 3/4;
+  padding: 2%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.LabBtn{
+  grid-column: 4/-1;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+.LabBtn button{
+  margin-top: 35%;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background-color:white;
+}
+.LabBtn button:hover{
+  color:white;
+  background-color: teal;
+}
+.LabBtnSmall1,.LabBtnSmall2{
+  display: none;
+}
+@media (max-width:850px) {
+  .LabBtn{
+    display: none;
+  }
+  .LaboratoryCard{
+    grid-template-rows: 1fr 0.3fr;
+    grid-template-columns: 1fr 0.7fr;
+    padding-bottom: 1%;
+  }
+  .LabOwnerImage{
+    grid-row: 1/2;
+    grid-column: 2/-1;
+    padding: 1%;
+    display: grid;
+    margin:0 2%;
+    align-content: center;
+    justify-content: center;
+  }
+  .Labdescription{
+    grid-row: 2/-1;
+    grid-column: 1/-1;
+    padding: 2%;
+  }
+  .LabBtnSmall1{
+    grid-row: 3/-1;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-content: center;
+    margin:0 25%;
+  }
+  .LabBtnSmall2{
+    grid-row: 3/-1;
+    grid-column: 2/-1;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-content: center;
+    margin:0 25%;
+  }
+  .LabBtnSmall1 button,.LabBtnSmall2 button{
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background-color:white;
+  }
+  .LabBtnSmall1 button:hover,.LabBtnSmall2 button:hover{
+    color:white;
+    background-color: teal;
+  }
+}
+@media (max-width:420px) {
+  .LabCard{
+    grid-template-rows: 1fr 0.5fr 0.1fr 0.1fr;
+    grid-template-columns: repeat(2,1fr);
+    padding-bottom: 0.5%;
+  }
+  .LabImage{
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    margin: 0 15%;
+    margin-bottom: 1%;
+  }
+  .LabOwnerImage{
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    padding: 0 25%;
+  } 
+  .LabBtnSmall1{
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  .LabBtnSmall2{
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+  .Labdescription{
+    grid-row: 4/5;
+  } 
+  
+}

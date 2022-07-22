@@ -1,0 +1,63 @@
+{
+  "name": "bookhealth",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@react-google-maps/api": "^2.7.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "firebase": "^9.2.0",
+    "google-map-react": "^2.1.10",
+    "leaflet": "^1.7.1",
+    "leaflet.locatecontrol": "^0.76.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-elastic-carousel": "^0.11.5",
+    "react-icons": "^4.2.0",
+    "react-lazy-load-image-component": "^1.5.1",
+    "react-leaflet": "^3.2.2",
+    "react-loading-skeleton": "^2.2.0",
+    "react-lottie": "^1.2.3",
+    "react-phone-number-input": "^3.1.38",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "4.0.3",
+    "react-window-size-hooks": "^1.0.3",
+    "styled-components": "^5.3.1",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "npm run clear && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.js",
+    "format": "prettier --write src/**/*.js",
+    "format:lint": "npm run format && npm run lint",
+    "clear": "rimraf build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@types/leaflet": "^1.7.7",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.26.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.4.1",
+    "rimraf": "^3.0.2"
+  }
+}

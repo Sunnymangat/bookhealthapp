@@ -1,0 +1,19 @@
+.DonationAppointment{
+  text-align: center;
+}
+.DonationAppointment img{
+  border-radius: 10px;
+  border: 1px solid teal;
+  width:50%;
+}
+.DADescription{
+  padding: 1%;
+}
+.DABtnSection1{
+  padding: 2%;
+}
+@media (max-width:520px) {
+  .DonationAppointment img{
+    width:80%;
+  } 
+}

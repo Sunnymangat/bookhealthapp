@@ -1,0 +1,145 @@
+.donationCard{
+  display: grid;
+  border: 1px solid white;
+  background: rgba(255, 255, 255,0.9);
+  margin: 1%;
+  margin-top: 0.5%;
+  grid-template-columns: 2fr 2fr 4fr 1fr;
+}
+.donationCard:hover,.donationCard:focus{
+  background:#fff5f5;
+}
+.donationCard img{
+  width:100%;
+  border-radius: 5%;
+}
+
+.donationImage{
+  grid-column: 1/2;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.donationabout{
+  grid-column: 2/3;
+  padding: 1%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.donationdescription{
+  grid-column: 3/4;
+  padding: 2%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+.donationBtn{
+  grid-column: 4/-1;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+.donationBtn button{
+  margin-top: 35%;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background: white;
+}
+
+.donationBtn button:hover{
+  color:white;
+  background-color: teal;
+}
+.donationBtnSmall1,.donationBtnSmall2{
+  display: none;
+}
+
+
+@media (max-width:851px) {
+  .donationBtn{
+    display: none;
+  }
+  .donationCard{
+    grid-template-rows: 0.5fr 0.1fr 0.2fr 0.1fr;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .donationCard img{
+    width:75%;
+  }
+  
+  .donationImage{
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    padding-top: 1%;
+    text-align: center;
+  }
+  .donationabout{
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    padding: 1%;
+  }
+  .donationdescription{
+    grid-row: 3/4;
+    grid-column: 1/-1;
+    padding: 1%;
+  }
+  .donationBtnSmall1{
+    grid-row: 4/-1;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-content: center;
+    margin:0 40%;
+  }
+  .donationBtnSmall2{
+    grid-row: 4/-1;
+    grid-column: 2/-1;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-content: center;
+    margin:0 40%;
+  }
+  .donationBtnSmall1 button,.donationBtnSmall2 button{
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background-color:white;
+  }
+  .donationBtnSmall1 button:hover,.donationBtnSmall2 button:hover{
+    color:white;
+    background-color: teal;
+  }
+}
+@media (max-width:420px) {
+  .donationCard{
+    text-align: center;
+    grid-template-rows: 0.5fr 0.3fr 0.1fr 0.1fr;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 1%;
+  }
+  .donationImage{
+    grid-row: 1/2;
+    grid-column: 1/-1;
+  }
+  .donationabout{
+    grid-row: 2/3;
+    grid-column: 1/-1;
+  }
+  .donationBtnSmall1{
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  .donationBtnSmall2{
+    grid-row: 3/4;
+    grid-column: 2/-1;
+  }
+  .donationdescription{
+    grid-row: 4/-1;
+    grid-column: 1/-1;
+  }
+  
+}
